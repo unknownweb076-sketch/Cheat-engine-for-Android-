@@ -16,7 +16,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      -       - name: Accept Android SDK licenses
+      - name: Accept Android SDK licenses
         run: yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
 
       - name: Locate NDK
